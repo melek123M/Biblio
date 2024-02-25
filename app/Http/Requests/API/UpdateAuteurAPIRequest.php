@@ -25,7 +25,7 @@ class UpdateAuteurAPIRequest extends APIRequest
     public function rules()
     {
         $rules = Auteur::$rules;
-        
+        $rules['email'] = 'email|required|';
         return $rules;
     }
 }

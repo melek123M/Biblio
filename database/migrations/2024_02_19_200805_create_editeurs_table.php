@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id('id');
             $table->string('maisonedit', 50)->nullable();
             $table->string('siteweb')->nullable();
-            $table->string('email', 25)->nullable();
+            $table->string('email', 250)->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

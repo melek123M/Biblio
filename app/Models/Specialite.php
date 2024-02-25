@@ -17,7 +17,7 @@ class Specialite extends Model
     ];
 
     public static array $rules = [
-        'nomspecialite' => 'required,unique'
+        'nomspecialite' => 'required|unique:specialites'
     ];
 
     

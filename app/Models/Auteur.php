@@ -22,7 +22,8 @@ class Auteur extends Model
 
     public static array $rules = [
         'nomauteur' => 'required',
-        'email' => 'email,required,unique'
+        'email' => 'email|required|unique:auteurs',
+        'numtel' => 'required'
     ];
 
     
